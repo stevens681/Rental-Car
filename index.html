@@ -13,6 +13,29 @@
 <h1>Business Name</h1>
 <p id= "businessname"></p>
 
+<form id="form">
+  Renters name: <br><input type="text" name="name" id="rName"><br><br>
+    <h2>Car Type</h2>
+    <select id="carDropdown" onchange="dropDown()">
+    <option value="none">Noner</option>
+    <option value="midbutton">Midsize</option>
+    <option value="econbutton">Economy</option>
+
+  </select><br><br>
+  </form>
+  <form id="carBrand">
+  <select name="cars">
+    <option value="none">None</option>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+</form>
+<h2>Renter Name</h2>
+<p id="renterName"></p><br>
+
+<p id="brandNames"></p>
 <h2>Class</h2>
 <p id="economycar"></p>
 
@@ -26,8 +49,7 @@
 <p id="mcarAvail"></p>
 
 <button id= "upbutton">Update Availability</button> 
-<button id= "midbutton">Rent out 1 Midsize Car</button>
-<button id= "econbutton">Rent out 1 Economy Car</button>
+<button id="addRenter" onclick="rentCar()">Rente a Car</button>
 
 <script type="text/javascript" src="object.js"></script>
 </body>
