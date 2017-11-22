@@ -24,17 +24,13 @@
   </select><br><br>
   </form>
   <form id="carBrand">
-  <select name="cars">
-    <option value="none">None</option>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
+  <select id="selectBrand" onchange="brandName()">
+    <option>Select Car Brand</option>
   </select>
 </form>
 <h2>Renter Name</h2>
-<p id="renterName"></p><br>
-
+<p id="renterName"></p>
+<h2>Car Brand</h2>
 <p id="brandNames"></p>
 <h2>Class</h2>
 <p id="economycar"></p>
